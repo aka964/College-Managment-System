@@ -1,0 +1,77 @@
+﻿@using SchoolManagementApp.MVC.Utilities
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UOB</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SchoolManagementApp.MVC.styles.css" asp-append-version="true" />
+</head>
+<body> 
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-light border-bottom mb-3" style="box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.3); background: ~/images/layer2.svg">
+            <div class="container-fluid">
+                <img src="~/images/logo.png" width="50" height="50" style="margin-right: 10px; margin-left: 20px"/>
+                <a class="navbar-brand text-black" asp-area="" asp-controller="Home" asp-action="Index">University Of Babylon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @if (HttpContextAccessor?.HttpContext?.User?.IsInRole(StaticData.role_admin) == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-black" asp-area="Admin" asp-controller="Courses" asp-action="Index">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" asp-area="Admin" asp-controller="Lecturers" asp-action="Index">Lecturers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" asp-area="Admin" asp-controller="Students" asp-action="Index">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" asp-area="Admin" asp-controller="Classes" asp-action="Index">Class Management</a>
+                            </li>
+                            <a class="nav-link text-danger" asp-area="Identity" asp-controller="Accounts" asp-action="Register" class="nav-link">Register Admin</a>
+
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-black" asp-area="User" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                    </ul>
+                    <partial name="_loginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            &copy; @DateTime.Now.Year - University Of Babylon
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @await Component.InvokeAsync("Notyf")
+</body>
+</html>

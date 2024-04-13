@@ -1,0 +1,217 @@
+﻿@using SchoolManagementApp.MVC.Utilities
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+            <img src="~/images/layer.jpg" class="d-block h-150 w-100" alt="blackboard image">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="text-black">ACADEMIC PROGRAMS</h1>
+                    <p class="text-black">Our 100% online, tuition-free degree <br>programs are designed to fit your life.</p>
+            @if(!HttpContextAccessor?.HttpContext?.User?.IsInRole(StaticData.role_admin) == true)
+            {
+                 <p><a class="btn btn-lg btn-primary" asp-area="Identity" asp-controller="Accounts" asp-action="Register">Sign up today</a></p>
+            }
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="~/images/layer3.jpg" class="d-block w-100" alt="geometry image">
+
+        <div class="container">
+            <div class="carousel-caption text-start">
+            <h1 class="text-black">Non-Degree Programs</h1>
+                    <p class="text-black">
+                        <br />
+                        Our certificate programs offer focused study<br /> in a specific area to help advance your career.<br />
+                        If you’re looking for a professional<br /> development opportunity that can be<br /> completed in less than a year,
+                        <br /> a certificate program may be right for you.
+                    </p>
+            <p><a class="btn btn-lg btn-primary float-start" asp-area="User" asp-controller="Home" asp-action="About">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+            <img src="~/images/layer2.jpg" class="d-block w-100" alt="children in school">
+
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Intelligent Students.</h1>
+            <p>From all over the world.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#contact-us-section">Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4"> 
+        <img src="~/images/icons-quality.svg" width="140" height="140" style="border-radius: 50%" />
+         <h2 class="fw-normal">Quality</h2>
+         <p>Our academic leadership includes scholars from top universities around the world.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+         <img src="~/images/icons-people.svg" width="140" height="140" style="border-radius: 50%" />
+         <h2 class="fw-normal">Expertise</h2>
+         <p>with more than 12 years of experience serving students around the world.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img src="~/images/icons-world.svg" width="140" height="140" style="border-radius: 50%" />
+        <h2 class="fw-normal">Global</h2>
+        <p>you'll learn skills to help you thrive in the global business world.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">What's it like to study at <span class="text-muted">Unversity of Babylon?</span></h2>
+            <p class="lead">
+                Studying at Unversity of Babylon can fit in to almost anyone's life.
+                That's because our classes take place 100% online, with no live lectures
+                that you have to tune in for. You can complete each week's assignments
+                on your schedule, whether that's during your commute, on your lunch break,
+                or after you put the kids to bed.
+                Our online learning model at UoBabylon is unique.
+                For more details about our online campus,
+                the kinds of assignments you'll complete,
+                and how you'll receive feedback.
+            </p>
+      </div>
+      <div class="col-md-5">
+            <img src="~/images/uob2.jpg" width="500" height="500" style="border-radius: 5%" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+                Our Academic Programs
+            </h2>
+            <p class="lead">
+                UoBabylon matches your ambition to help you meet your goals.
+                Our programs are American-accredited, 100% online and affordable
+                so you can graduate debt-free with the knowledge you need
+                to become an industry leader.
+            </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+            <img src="~/images/uob3.jpg" width="500" height="500" style="border-radius: 5%" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+                Become A Student
+            </h2>
+            <p class="lead">
+                Affordable degree programs provide you with the knowledge
+                you need to succeed with top companies after graduation.
+                Are you ready to join the Education Revolution?
+            </p>
+      </div>
+      <div class="col-md-5">
+            <img src="~/images/uob4.jpg" width="500" height="500" style="border-radius: 5%" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div id="contact-us-section" class="row featurette justify-content-center">
+        <div class="col-md-7">
+            <h2 class="featurette-heading text-center mb-4">Contact Us</h2>
+            <p class="lead text-center">Feel free to get in touch with us for any inquiries or questions you may have. We're here to help!</p>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+    <div class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" style="position: fixed; top: 20px; left: 20px;">
+        <div class="toast-header">
+            <strong class="me-auto text-dark">Message Sent</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-light">
+            Your message has been sent successfully. We will get back to you shortly.
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myToast = new bootstrap.Toast(document.querySelector('.toast'));
+
+            var form = document.getElementById('contact-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+                // Code to send the message (you can replace this with your own logic)
+
+                // Show the toast message
+                myToast.show();
+
+                // Reset the form (optional)
+                form.reset();
+            });
+        });
+    </script>

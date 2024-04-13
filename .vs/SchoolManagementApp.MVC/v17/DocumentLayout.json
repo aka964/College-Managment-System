@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|c:\\users\\leoda\\desktop\\projects\\schoolmanagementapp.mvc-master\\areas\\identity\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|solutionrelative:areas\\identity\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|c:\\users\\leoda\\desktop\\projects\\schoolmanagementapp.mvc-master\\areas\\identity\\views\\accounts\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|solutionrelative:areas\\identity\\views\\accounts\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|c:\\users\\leoda\\desktop\\projects\\schoolmanagementapp.mvc-master\\data\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|solutionrelative:data\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|c:\\users\\leoda\\desktop\\projects\\schoolmanagementapp.mvc-master\\models\\studentmetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CA947DF-AFF6-4AD7-87F2-9F413257D5EA}|SchoolManagementApp.MVC.csproj|solutionrelative:models\\studentmetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Areas\\Identity\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:13:58.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Areas\\Identity\\Views\\Accounts\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Accounts\\Register.cshtml",
+              "ToolTip": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Areas\\Identity\\Views\\Accounts\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Accounts\\Register.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwC8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T17:13:49.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentMetadata.cs",
+              "DocumentMoniker": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Models\\StudentMetadata.cs",
+              "RelativeDocumentMoniker": "Models\\StudentMetadata.cs",
+              "ToolTip": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Models\\StudentMetadata.cs",
+              "RelativeToolTip": "Models\\StudentMetadata.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:12:58.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Data\\Student.cs",
+              "RelativeDocumentMoniker": "Data\\Student.cs",
+              "ToolTip": "C:\\Users\\leoda\\Desktop\\Projects\\SchoolManagementApp.MVC-master\\Data\\Student.cs",
+              "RelativeToolTip": "Data\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T17:12:47.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

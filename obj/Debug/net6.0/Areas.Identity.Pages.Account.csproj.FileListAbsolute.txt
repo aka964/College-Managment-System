@@ -1,0 +1,9 @@
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.csproj.AssemblyReference.cache
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.AssemblyInfoInputs.cache
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.AssemblyInfo.cs
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.csproj.CoreCompileInputs.cache
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.RazorAssemblyInfo.cache
+C:\Users\leoda\Desktop\Projects\SchoolManagementApp.MVC-master\obj\Debug\net6.0\Areas.Identity.Pages.Account.RazorAssemblyInfo.cs
